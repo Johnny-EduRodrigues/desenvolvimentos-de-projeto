@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+ 
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*barra de cima*/
+.top-bar {
+    background-color: #333131;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+}
+
+/*botões de navegação da parte de cima */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ajuda {
+    background-color: #1d1d1d;
+    box-shadow: 0 4px 10px #000000;
+}
+
+.ajuda:hover {
+    background-color: #555;
+}
+
+.entrar {
+    background-color: #c7002e;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.entrar:hover {
+    background-color: #800000;
+    color: white;
+}
+
+/*parte do meio */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    background: linear-gradient(to right, #c7002e, #ff4d4d);
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.buscar-passagens {
+    background-color: #fff;
+    color: #c7002e;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.buscar-passagens:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+
+/*parte de baixo */
+.viagem-disponivel {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    width: 300px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .viagem-disponivel h3 {
+    margin-top: 0; 
+    color: #333; 
+  }
+  
+  .viagem-disponivel p {
+    margin-bottom: 5px; 
+    color: #666; 
+  }
+  
+  .viagem-disponivel button {
+    
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .viagem-disponivel button:hover {
+    background-color: #0056b3; 
+  }
+  
+
+  .container-viagens {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+/*Rodapé*/
+footer {
+    width: 100%;
+    padding: 15px 0; 
+    background-color: #1d1d1d;
+    color: white;
+    text-align: center; 
+    height: 80px;
+  }
+footer h1{
+    text-align: center;
+}
+
+
+/*responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
